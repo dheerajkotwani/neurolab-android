@@ -42,15 +42,12 @@ public class NeuroSettingsFragment extends PreferenceFragmentCompat implements S
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
 
         if (samplesPref.getText().isEmpty()) {
-            samplesPref.setText("3");
             Toast.makeText(getActivity(), "Enter valid input !", Toast.LENGTH_SHORT).show();
         }
         if (binsPref.getText().isEmpty()) {
-            binsPref.setText("4");
             Toast.makeText(getActivity(), "Enter valid input !", Toast.LENGTH_SHORT).show();
         }
         if (channelsPref.getText().isEmpty()) {
-            channelsPref.setText("2");
             Toast.makeText(getActivity(), "Enter valid input !", Toast.LENGTH_SHORT).show();
         }
         switch (key) {
